@@ -8,4 +8,6 @@ public class BaseStateConstant {
 
     public static final Byte DEFAULT_STATE = 0;
 
+    public static final Byte DELETE_STATE = 99;
+
 }
