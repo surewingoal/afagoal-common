@@ -30,7 +30,7 @@ public class DateUtils {
         return LocalDate.parse(str, dateFormatter);
     }
 
-    public static String valueOfString(LocalDate date) {
+    public static String format(LocalDate date) {
         checkNull(date);
         return date.format(dateFormatter);
     }
