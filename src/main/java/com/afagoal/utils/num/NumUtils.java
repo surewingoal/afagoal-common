@@ -1,5 +1,6 @@
 package com.afagoal.utils.num;
 
+import java.math.BigDecimal;
 import java.text.DecimalFormat;
 
 /**
@@ -10,6 +11,7 @@ public class NumUtils {
     private static final DecimalFormat NUM_FORMAT = new DecimalFormat("#.00000");
     public static final String UNIT_USD = "USD";
     public static final String UNIT_ETH = "ETH";
+    public static final String UNIT_PERCENTAGE = "%";
 
     public static String moneyFormat(Number number) {
         return moneyFormat(number, UNIT_USD);
@@ -22,4 +24,7 @@ public class NumUtils {
         return NUM_FORMAT.format(number) + " " + unit;
     }
 
+    public static String percentageFormat(Number priceChange) {
+        return NUM_FORMAT.format(priceChange) + UNIT_PERCENTAGE;
+    }
 }
