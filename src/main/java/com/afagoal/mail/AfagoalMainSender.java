@@ -1,5 +1,6 @@
 package com.afagoal.mail;
 
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.util.Assert;
@@ -18,12 +19,12 @@ import lombok.Setter;
 @Setter
 public class AfagoalMainSender {
 
-    private JavaMailSenderImpl sender;
+    private JavaMailSender sender;
     private String organization;
     private String from;
     private String baseContent;
 
-    public AfagoalMainSender(JavaMailSenderImpl sender) {
+    public AfagoalMainSender(JavaMailSender sender) {
         Assert.notNull(sender, "mailSender can not be null!");
         this.sender = sender;
     }
