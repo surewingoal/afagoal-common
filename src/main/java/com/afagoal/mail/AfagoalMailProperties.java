@@ -9,7 +9,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class AfagoalMainProperties {
+public class AfagoalMailProperties {
 
     //messagePart
     private String organization = "AFAGOAL虚拟币行情";
