@@ -1,6 +1,5 @@
 package com.afagoal.utils.num;
 
-import java.math.BigDecimal;
 import java.text.DecimalFormat;
 
 /**
