@@ -8,14 +8,14 @@ import org.apache.commons.codec.digest.DigestUtils;
  */
 public class MD5Utils {
 
-    private static final String AFAGOAL_KEY = "afagoal_";
+    private static final String AFAGOAL_SALT = "afagoal_";
 
     public static String md5Hex(String data) {
         return DigestUtils.md5Hex(data);
     }
 
-    public static String passwordSecurcy(String password) {
-        return md5Hex(password + AFAGOAL_KEY);
+    public static String passwordEncode(String password) {
+        return md5Hex(password + AFAGOAL_SALT);
     }
 
 }
