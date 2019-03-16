@@ -19,6 +19,12 @@ import lombok.Setter;
 @Setter
 public class AfaUser implements Serializable {
 
+    public static final AfaUser EMPTY_USER = new AfaUser();
+
+    public static final String PREFIX_TOKEN = "afagoal ";
+
+    private String token;
+
     private Long id;
 
     private String openId;
@@ -30,8 +36,6 @@ public class AfaUser implements Serializable {
     private String nickName;
 
     private String mobile;
-
-    private String password;
 
     @JsonDeserialize(using = CustomDateDeserialize.class)
     @JsonSerialize(using = CustomDateSerialize.class)
