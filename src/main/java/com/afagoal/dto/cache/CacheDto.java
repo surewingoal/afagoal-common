@@ -1,4 +1,4 @@
-package com.afagoal.utildto.cache;
+package com.afagoal.dto.cache;
 
 import java.time.LocalDateTime;
 import lombok.Getter;

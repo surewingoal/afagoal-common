@@ -1,7 +1,7 @@
 package com.afagoal.utils;
 
 
-import com.afagoal.utildto.Tree;
+import com.afagoal.dto.Tree;
 
 import java.util.ArrayList;
 import java.util.HashMap;
