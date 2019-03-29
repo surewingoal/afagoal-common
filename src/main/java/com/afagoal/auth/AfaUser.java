@@ -1,4 +1,4 @@
-package com.afagoal.dto.user;
+package com.afagoal.auth;
 
 import com.afagoal.utils.json.CustomDateDeserialize;
 import com.afagoal.utils.json.CustomDateSerialize;
@@ -61,6 +61,8 @@ public class AfaUser implements Serializable {
 
     private int loginTimes;
 
+    private String areaCode;
+
     @JsonDeserialize(using = CustomDateTimeDeserialize.class)
     @JsonSerialize(using = CustomDateTimeSerialize.class)
     private LocalDateTime lastLoginTime;
@@ -70,4 +72,12 @@ public class AfaUser implements Serializable {
     private LocalDateTime createdAt;
 
 
+    public AfaUser(long id, String name, String address) {
+        this.id = id;
+        this.userName = name;
+        this.areaCode = address;
+    }
+
+    public AfaUser() {
+    }
 }
